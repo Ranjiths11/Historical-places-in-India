@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+
+.color { 
+  color:#E5E5E5;
+  color:#4286F5;
+  color:#A2EEEA;
+  color:#82D8F1;
+}
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  font-family: 'Roboto', sans-serif;
+  /* background: linear-gradient(to right,#82D8F1,#A2EEEA); */
+  background: url("https://media.istockphoto.com/id/1068995964/photo/carved-chariot-wheel-on-konark-sun-temple-odisha-india.jpg?s=612x612&w=0&k=20&c=erttg9kOoTEgVIyTyGh6UyRstLZLF6AO3G4u9rWhSqU=");
+ background-repeat: no-repeat;
+ background-size: cover;
+ background-position: center;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card{
+  width: 550px;
+  height: 350px;
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
+  border-right: 30px solid #4286F5;
+  padding: 30px;
+  border-radius: 5px;
+}
+
+.card h3{
+  color:#4286F5;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+.form-group{
+  margin-bottom: 20px;
+}
+.form-group label,.form-group input{
+display: block;
+}
+.form-group label{
+  font-size: 10px;
+  text-transform: uppercase;
+  color:#A1A1A1;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+.form-group input{
+  width: 100%;
+  height: 35px;
+  border: none;
+  outline: none;
+  background: #E5E5E5;
+  font-size: 16px;
+  padding: 10px;
+}
+
+.more{
+  display: flex;
+  justify-content: space-between;
+  font-size: 10px;
+  color:#A1A1A1;
+  margin-bottom: 20px;
+}
+
+.more a{
+  color:#4286F5;
+  text-decoration: none;
+}
+
+
+.card button{
+  background-color: #4286F5;
+  color:#fff;
+  width: 100%;
+  height: 30px;
+  border: none;
+  border-radius :3px;
+  text-transform: uppercase;
+  font-size: 11px;
+}
+
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h3>Account Login</h3>
+    <form action="" autocomplete="off">
+      <div class="form-group">
+        <label for="name">Username</label>
+        <input type="text" id="name">
+    </div>
+    <div class="form-group">
+      <label for="password">Password</label>
+      <input type="password" id="password">
+    </div>
+    <div class="more">
+      <label><input type="checkbox"> Remember Me</label>
+      <a href="#">Forget Password ?</a>
+    </div>
+    <button>Login</button>
+    </form>
+  </div>
+</body>
+</html>
